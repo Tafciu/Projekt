@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The World of Caffeine</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
     <header>
@@ -14,6 +16,7 @@
             <a href="#science">The Science</a>
             <a href="#benefits">Health Benefits</a>
             <a href="#brewing">Brewing Tips</a>
+            <a href="#favorites">My Coffee</a>
         </nav>
     </header>
 
@@ -25,12 +28,14 @@
 
     <section id="science">
         <h3>🔬 The Science of Caffeine</h3>
-        <p>Caffeine is a natural stimulant most commonly found in coffee, tea, and cacao plants. It works by blocking adenosine, a neurotransmitter that makes you feel tired, thereby promoting wakefulness.</p>
+        <p>Caffeine is a natural stimulant most commonly found in coffee, tea, and cacao plants. It works by blocking
+            adenosine, a neurotransmitter that makes you feel tired, thereby promoting wakefulness.</p>
     </section>
 
     <section id="benefits">
         <h3>❤️ Health Benefits</h3>
-        <p>Studies suggest moderate coffee consumption can offer various health advantages, including improved energy levels and reaction times. However, moderation is key to avoid side effects.</p>
+        <p>Studies suggest moderate coffee consumption can offer various health advantages, including improved energy
+            levels and reaction times. However, moderation is key to avoid side effects.</p>
         <ul class="services-list">
             <li>Enhanced Focus and Alertness</li>
             <li>Source of Antioxidants</li>
@@ -38,9 +43,35 @@
         </ul>
     </section>
 
+    <section id="brewing">
+        <h3>💡 Brewing Tips</h3>
+        <p>The secret to a perfect cup lies in the grind size, water temperature, and coffee-to-water ratio. Experiment
+            with different methods like Pour-over, French Press, or Espresso!</p>
+    </section>
+
+    <section id="favorites">
+        <h3>⭐ My Favorite Coffees (Saved Locally)</h3>
+        <form id="favorite-coffee-form">
+            <div class="form-group">
+                <label for="coffee-name">Favorite Coffee/Drink:</label>
+                <input type="text" id="coffee-name" name="coffee-name" required>
+            </div>
+            <div class="form-group">
+                <label for="brew-method">Brew Method (e.g., Pour-over, Espresso):</label>
+                <input type="text" id="brew-method" name="brew-method" required>
+            </div>
+            <button type="submit" class="cta-button">Save My Favorite</button>
+        </form>
+
+        <h4>My Saved Favorites:</h4>
+        <ul id="favorites-list" class="services-list">
+        </ul>
+    </section>
     <footer>
         <p>&copy; 2025 Coffee Knowledge Base | Information for educational purposes.</p>
     </footer>
 
+    <script src="index.js"></script>
 </body>
+
 </html>

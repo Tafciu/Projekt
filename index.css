@@ -1,25 +1,25 @@
-/* 1. Basic Reset & Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f2ee; /* Soft Cream Background */
+    background-color: #f4f2ee;
     color: #444;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: #6f4e37; /* Coffee Brown color */
+h1,
+h2,
+h3 {
+    color: #6f4e37;
 }
 
-/* 2. Header and Navigation */
 header {
     background-color: #ffffff;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -31,12 +31,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #a0522d; /* Sienna Accent on hover */
+    color: #a0522d;
 }
 
-/* 3. Main Content (Hero Section) */
 .hero {
-    background: linear-gradient(to right, #8b4513, #a0522d); /* Dark Brown Gradient background */
+    background: linear-gradient(to right, #8b4513, #a0522d);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -45,7 +44,7 @@ nav a:hover {
 
 .cta-button {
     display: inline-block;
-    background-color: #ffc300; /* Amber call-to-action color */
+    background-color: #ffc300;
     color: #444;
     padding: 10px 20px;
     text-decoration: none;
@@ -58,14 +57,33 @@ nav a:hover {
     background-color: #e5b000;
 }
 
-/* 4. Section Styling */
 section {
     padding: 40px 20px;
     max-width: 800px;
     margin: 0 auto 20px auto;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6f4e37;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .services-list {
@@ -74,22 +92,20 @@ section {
 }
 
 .services-list li {
-    background-color: #fcefdc; /* Light coffee-toned list background */
+    background-color: #fcefdc;
     margin: 8px 0;
     padding: 10px;
-    border-left: 5px solid #6f4e37; /* Coffee Brown accent */
+    border-left: 5px solid #6f4e37;
 }
 
-/* 5. Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #6f4e37; /* Dark Coffee Brown Footer */
+    background-color: #6f4e37;
     color: white;
     font-size: 0.9em;
 }
 
-/* 6. Basic Responsiveness (for smaller screens) */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
